@@ -1,0 +1,56 @@
+body{
+    background: url(images/damir-yakupov-GN_s-23_zME-unsplash.jpg);
+    width:auto;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment: fixed;
+    font-family: 'Vollkorn', sans-serif;
+    position: relative;
+}
+.jumbotron {
+    background-color: transparent;
+    margin: 200px;
+    text-align: center;
+    color: white;
+}
+#time-side {
+    margin-left: 900px;
+    padding-bottom: 50px;
+    font-size: 50px;
+}
+
+#appn {
+    margin-top: -200px;
+    padding-bottom: 75px;
+    font-size: 100px
+}
+.btn-circle {
+    border-radius: 100px;
+    height: 200px;
+    width: 200px;
+    font-size: 70px
+}
+
+#strt,#nah{
+  position: absolute;
+}
+#strt{
+z-index: 1;
+}
+
+#action {
+    margin: -200px 200px 0px 300px;
+}
+
+.time-main {
+    font-size: 300px;
+    margin: 250px 0px 0px 0px;
+}
+
+#nah {
+    
+}
+
+.time-main {
+    
+}

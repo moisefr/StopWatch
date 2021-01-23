@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Stop Watch Application</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="styling.css" rel="stylesheet">
+
+  </head>
+  <body>
+      <!--  Create Home Section Tittle    -->
+      <div class="jumbotron">
+      <div class="container-fluid">
+        <div class="featured">
+            <h1 id="appn">
+              Stop Watch
+            </h1>
+            <h2 id="time-side">
+              00:00:00
+            </h2>
+            <div class="container">
+            <div class="row" id="action">
+                <div class="col-md-3">
+                    <h1 class="time-main"id="time-main1">00</h1>
+                </div>
+                <div class="col-md-1">
+                    <h1 class="time-main" id="time-main">:</h1>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="time-main" id="time-main2">00</h1>
+                </div>
+                <div class="col-md-1">
+                    <h1 class="time-main" id="time-main">:</h1>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="time-main" id="time-main3">00</h1>
+                </div>
+            </div>
+        </div>
+      </div>
+      </div>
+<!--  Section with Two Cricles -->
+      <div class = "icons">
+        <div class="container">
+            <div class="row-but" id="action">
+                <div class="col-md-6">
+                     <button type="button" class="btn btn-warning btn-circle btn-xl" id="strt">Start</button>
+                     <button type="button" class="btn btn-danger btn-circle btn-xl" id="nah">Stop</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-warning btn-circle btn-xl" id="lap">Lap</button>
+                </div>
+            </div>
+            <div class="row-but" id="action">
+                <div class="col-md-6">
+                     <button type="button" class="btn btn-warning btn-circle btn-xl" id="res">Resume</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn btn-warning btn-circle btn-xl" id="ret">Reset</button>
+                </div>
+            </div>
+        </div>
+      </div>  
+    </div>
+  </body>
+
+ <script src="stopwatch.js"></script>
+</html>
