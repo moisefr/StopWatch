@@ -9,10 +9,10 @@ $(function(){
         var lap = {minutes:0, seconds:0, centiseconds:0};//minutes, seconds centiseonds for the lap
     
     //On App Load show start and lap buttons
-//    $(".row-but").hide();
+    $(".row-but2").hide();
     showbuttons("#strt", "#lap");
     
-    clickStart();
+//    clickStart();
         
     //Click Start button
         //mode on
@@ -40,7 +40,7 @@ $(function(){
         function clickStart(){
             mode = true;
             showbuttons("#nah", "#lap");
-//            $("#strt").hide();
+            $("#strt").hide();
             timeCounter = $("#time-main").innerHTML;
             setInterval(function(){interval = 1;} , 10);
             timer.minutes = Math.round(interval/1000);
