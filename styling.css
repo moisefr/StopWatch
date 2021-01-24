@@ -13,9 +13,8 @@ body{
     text-align: center;
     color: white;
 }
-#time-side {
-    margin-left: 900px;
-    padding-bottom: 50px;
+#action2 {
+    margin-left: 700px;
     font-size: 50px;
 }
 
@@ -24,33 +23,45 @@ body{
     padding-bottom: 75px;
     font-size: 100px
 }
-.btn-circle {
-    border-radius: 100px;
+#action {
+    margin: -200px 200px 0px 200px;
+}
+
+.time-main {
+    margin: 100px 0px 0px 0px;
+}
+
+.control {
+    border-radius: 1000px;
+    border-color: black;
     height: 200px;
     width: 200px;
-    font-size: 70px
+    font-size: 50px
+}
+#b-s, #b-l, #b-rm, #b-rs{
+    background-color: orange;
+}
+#b-n{
+    background-color: red;
+    /* Sit on top of the page content */
+    top: 3-0px;
+    left: 560px;
+    z-index: 2;
+    display: none;
+}
+#time-main1,#time-main2,#time-main3 {
+    font-size: 100px
+}
+.icons {
+    margin-top: 10px;
 }
 
-#strt,#nah{
-  position: absolute;
-}
-#nah{
-z-index: 1;
-}
-
-#action {
-    margin: -200px 200px 0px 300px;
-}
-
-.time-main {
-    font-size: 300px;
-    margin: 250px 0px 0px 0px;
-}
-
-#nah {
-    
-}
-
-.time-main {
-    
+.laps {
+    color: white;
+    margin-left: 500px;
+    margin-top: -200px;
+    width: 80%;
+    font-size: 75px;
+    height:400px;
+    overflow:auto;
 }

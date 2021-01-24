@@ -20,9 +20,26 @@
             <h1 id="appn">
               Stop Watch
             </h1>
-            <h2 id="time-side">
-              00:00:00
-            </h2>
+           <div class="container">
+            <div class="row" id="action2">
+                <div class="col-md-3">
+                    <h1 class="lap-side"id="lap-side1">00</h1>
+                </div>
+                <div class="col-md-1">
+                    <h1 class="lap-side" id="lap-side">:</h1>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="lap-side" id="lap-side2">00</h1>
+                </div>
+                <div class="col-md-1">
+                    <h1 class="lap-side" id="lap-side">.</h1>
+                </div>
+                <div class="col-md-3">
+                    <h1 class="lap-side" id="lap-side3">00</h1>
+                </div>
+            </div>
+        </div>
+        <!--Create the timer sections-->
             <div class="container">
             <div class="row" id="action">
                 <div class="col-md-3">
@@ -35,7 +52,7 @@
                     <h1 class="time-main" id="time-main2">00</h1>
                 </div>
                 <div class="col-md-1">
-                    <h1 class="time-main" id="time-main">:</h1>
+                    <h1 class="time-main" id="time-main">.</h1>
                 </div>
                 <div class="col-md-3">
                     <h1 class="time-main" id="time-main3">00</h1>
@@ -47,27 +64,34 @@
 <!--  Section with Two Cricles -->
       <div class = "icons">
         <div class="container">
-            <div class="row-but" id="action">
+            <div class="row1">
                 <div class="col-md-6">
-                     <button type="button" class="btn btn-warning btn-circle btn-xl" id="strt">Start</button>
-                     <button type="button" class="btn btn-danger btn-circle btn-xl" id="nah">Stop</button>
+                     <button type="button" class="control" id="b-s">Start</button>
+                     <button type="button" class="control" id="b-n">Stop</button>
                 </div>
                 <div class="col-md-6">
-                    <button type="button" class="btn btn-warning btn-circle btn-xl" id="lap">Lap</button>
+                    <button type="button" class="control" id="b-l">Lap</button>
                 </div>
             </div>
-            <div class="row-but2" id="action">
+            <div class="row2" >
                 <div class="col-md-6">
-                     <button type="button" class="btn btn-warning btn-circle btn-xl" id="res">Resume</button>
+                     <button type="button" class="control" id="b-rm">Resume</button>
                 </div>
                 <div class="col-md-6">
-                    <button type="button" class="btn btn-warning btn-circle btn-xl" id="ret">Reset</button>
+                    <button type="button" class="control" id="b-rs">Reset</button>
                 </div>
             </div>
         </div>
       </div>  
     </div>
+      <div class="laps">
+        <ol id="laplist" type="1">
+            <li> </li>
+          
+        </ol>
+        
+      </div>
   </body>
-
+ 
  <script src="stopwatch.js"></script>
 </html>
