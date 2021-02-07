@@ -34,11 +34,14 @@ $(function(){
     });
     //click on resumeButton
     $("#b-rm").click(function(){
-            mode = true; });
-    $("#b-rs").click(function(){
-           location.reload(); });
+            mode = true;
+    });
+    
     //click on resetButton
         //reload the apge
+    $("#b-rs").click(function(){
+           location.reload(); });
+    
     
     //click on lapButton
     $("#b-l").click(function(){
@@ -84,15 +87,12 @@ $(function(){
             if(mode==true){
                 //Changing the centiseconds column in the main    
                 timer.centiseconds = timeCounter%100;
-                lap.centiseconds = lapCounter%100;
                 appchange("#time-main3",timer.centiseconds);
             //Changing the seconds column in the main
                 timer.seconds = Math.floor((timeCounter/100)%60);
-                lap.seconds = Math.floor((lapCounter/100)%60);
                 appchange("#time-main2",timer.seconds);
             //Changing the minutes column in the main
                 timer.minutes = Math.floor((timeCounter)/6000);
-                lap.minutes = Math.floor((lapCounter)/6000);
                 appchange("#time-main1",timer.minutes);
             //rinse and repeat for laps
             }
